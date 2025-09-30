@@ -1,0 +1,27 @@
+{
+  "name": "id_veeb",
+  "version": "1.0.0",
+  "description": "Veebiprogrammeerimise tundides tehtud express.js projekt",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://SaskiaTork@github.com/SaskiaTork/ID_veeb.git"
+  },
+  "keywords": [
+    "veebiprogrammeerimine",
+    "node.js",
+    "express.js"
+  ],
+  "author": "Saskia Tork",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SaskiaTork/ID_veeb/issues"
+  },
+  "homepage": "https://github.com/SaskiaTork/ID_veeb#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

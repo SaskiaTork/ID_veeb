@@ -1,0 +1,27 @@
+const fs = require("fs");
+
+function pickOneWisdom(rawText){
+    let oldWisdomList = rawText.split(";");
+    return oldWisdomList[Math.floor(Math.random() * oldWisdomList.length)].trim();
+}
+
+function showAllWisdom(rawText){
+    let oldWisdomList = rawText.split(";");
+    return oldWisdomList.map((item, i) => `${i + 1}) ${item.trim()}`).join("\n");
+}
+
+function readWisdomFile(fileRef, callback){
+    fs.readFile(fileRef, "utf8", (err, data) => {
+        if(err) {
+            callback(err);
+        } else {
+            callback(null, data);
+        }
+    });
+}
+
+module.exports = {
+    pickOneWisdom,
+    showAllWisdom,
+    readWisdomFile
+};
