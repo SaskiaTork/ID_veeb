@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+  <meta charset="utf-8">
+  <title>Külastuste logi</title>
+</head>
+<body>
+  <h1>Külastuste logi</h1>
+
+  <% if (visits.length === 0) { %>
+    <p>Ühtegi külastust pole veel registreeritud.</p>
+  <% } else { %>
+    <ul>
+      <% visits.forEach(v => { %>
+        <li><%= v %></li>
+      <% }) %>
+    </ul>
+  <% } %>
+
+  <p>
+    <a href="/">Avalehele</a> |
+    <a href="/regvisit">Lisa uus külastus</a>
+  </p>
+</body>
+</html>

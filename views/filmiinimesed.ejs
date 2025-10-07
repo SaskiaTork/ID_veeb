@@ -10,12 +10,13 @@
   <p>See leht on tehtud <a href="https://www.tlu.ee">Tallinna ülikool</a> veebiprogrammeerimise kursusel ja ei sisalda mõistliku sisu. Alustasin sel sügisel teist ülikooliaastat. Siiani tundub, et ees on tulemas huvitav aasta. Lisaks mainin ka, et see pilt on hetkel ajutine, niikaua kuni ma leian koha, kust ma saan selle originaalse pildi. Tahtsin kodus kõik uuesti läbi teha ja ei mäletanud kust see pärit. Ma programmeerin esimest korda, vaatame mis välja tuleb. Kui see leht töötab, siis ma arvan, et õppisin juba midagi.</p>
   <hr>
   <ul>
-	<li><a href="/">Avalehele</a></li>
-  </ul>
-  <h2>Ajainfo</h2>
-  <ul>
-    <li> Täna on: <%= nowWd%></li>
-	<li> Kuupäev on: <%= nowDate %></li>
-  </ul>
+    <li><a href="/">Avaleht</a></li>
+	<li><a href="/eestifilm">Eseti filmi avaleht</a></li>
+	</ul>
+  <h2>Eesti filmiga seotud inimesed</h2>
+  <ul><% personList.forEach(function(listItem){ %>
+	<li><%= listItem.first_name %> <%= listItem.last_name %>, sündinud<%= listItem.born %></li>
+	<%}); %>
+	</ul>
 </body>
 </html>

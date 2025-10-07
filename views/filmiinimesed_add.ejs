@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+  <meta charset="utf-8">
+  <title>Saskia Tork, veebiprogrammerimine</title>
+</head>
+<body>
+  <img src="/images/vp_banner_2025_ID.jpg" alt="kursuse bänner">
+  <h1>Saskia Tork, veebiprogrammerimine</h1>
+  <p>See leht on tehtud <a href="https://www.tlu.ee">Tallinna ülikool</a> veebiprogrammeerimise kursusel ja ei sisalda mõistliku sisu. Alustasin sel sügisel teist ülikooliaastat. Siiani tundub, et ees on tulemas huvitav aasta. Lisaks mainin ka, et see pilt on hetkel ajutine, niikaua kuni ma leian koha, kust ma saan selle originaalse pildi. Tahtsin kodus kõik uuesti läbi teha ja ei mäletanud kust see pärit. Ma programmeerin esimest korda, vaatame mis välja tuleb. Kui see leht töötab, siis ma arvan, et õppisin juba midagi.</p>
+  <hr>
+  <ul>
+    <li><a href="/">Avaleht</a></li>
+	<li><a href="/eestifilm">Eesti filmi avaleht</a></li>
+	</ul>
+  <h2>Eesti filmiga seotud inimeste lisamine</h2>
+  <form method="POST">
+	<label for= "firstNameInput">Filmitegelase eesnimi</lable>
+	<input id="firstNameInput name="firstNameInput" type="text" placeholder="Eesnimi.." required>
+	<br>
+	<label for= "lastNameInput">Filmitegelase perekonanimi</lable>
+	<input id="lastNameInput name="lastNameInput" type="text" placeholder="Perekonnanimi.." required>
+	<br>
+	<label for ="position">Roll inimesel filmitegemisel</lable>
+	<textarea id="positionInput" name="positionInput" placeholder="Kirjuta siia..."
+	<label for="bornINput">Sünniaeg</label>
+	<input id="bornInput" name="bornInput" type="date" required>
+	<br>
+	<label for="deceasedINput">Surmaaeg</lable>
+	<input id="deceasedInput" name="deceasedInput" type="date">
+	<br>
+	<input id="personSubmit" name="personSubmit" type="submit" value="Salvesta">
+   </form>
+   <p><%=notice% </p>
+ 
+	</ul>
+</body>
+</html>
